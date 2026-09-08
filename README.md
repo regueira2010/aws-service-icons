@@ -1,68 +1,36 @@
 # aws-service-icons
 
-Repositorio público de iconos de servicios AWS con fines exclusivamente educativos y sin ánimo de lucro.
+Colección organizada de iconos SVG de servicios y recursos de Amazon Web Services (AWS), destinada a documentación técnica, diagramas de arquitectura, presentaciones y proyectos educativos.
 
-## Descripción
+## Contenido
 
-Este proyecto reúne iconos SVG de la arquitectura de AWS, organizados para facilitar su uso en documentación, diagramas, presentaciones y herramientas internas.
-
-La estructura se divide en dos partes principales:
-
-- `Icon-package-aws-temp`: paquete temporal oficial de AWS que se usa como fuente de actualización.
-- `icons`: carpeta pública del repositorio que recibe la versión normalizada y lista para publicar.
-
-## Estructura del repositorio
+Los iconos están agrupados por categorías funcionales de AWS y disponibles en diferentes tamaños cuando el paquete original los proporciona.
 
 ```text
-aws-service-icons/
-├── .gitignore
-├── LICENSE
-├── README.md
-├── update-icons.ps1
-├── Icon-package-aws-temp/
-│   ├── Architecture-Group-Icons_07312026/
-│   ├── Architecture-Service-Icons_07312026/
-│   ├── Category-Icons_07312026/
-│   └── Resource-Icons_07312026/
-├── icons/
-│   ├── groups/
-│   ├── services/
-│   ├── categories/
-│   └── resources/
-└── .vscode/   (opcional, ignorado por git)
+icons/
+├── categories/
+├── groups/
+├── resources/
+└── services/
+   ├── analytics/
+   ├── application-integration/
+   ├── artificial-intelligence/
+   ├── databases/
+   ├── compute/
+   ├── containers/
+   ├── networking-content-delivery/
+   ├── security-identity-compliance/
+   └── ...
 ```
 
-## Cómo actualizar los iconos
+Cada carpeta contiene archivos SVG listos para incorporarse a herramientas de documentación o diseño compatibles con este formato.
 
-1. Descarga el nuevo paquete oficial de AWS en la carpeta `Icon-package-aws-temp`.
-2. Verifica que contenga las cuatro secciones principales:
-   - `Architecture-Group-Icons*`
-   - `Architecture-Service-Icons*`
-   - `Category-Icons*`
-   - `Resource-Icons*`
-3. Ejecuta el script de actualización:
+## Uso
 
-```powershell
-./update-icons.ps1
-```
+Puedes explorar la carpeta `icons` y utilizar los archivos SVG correspondientes a los servicios, grupos, categorías o recursos que necesites. Los nombres de las carpetas siguen la organización temática del catálogo de AWS.
 
-## Modo de validación segura
+## Licencia y atribución
 
-Antes de reemplazar el contenido de `icons`, el script valida que el paquete fuente sea correcto y completo. Si quieres revisar sin cambiar nada:
+Los iconos pertenecen a AWS y se distribuyen de acuerdo con los términos aplicables al paquete oficial de iconos de AWS. Consulta el archivo [LICENSE](LICENSE) antes de utilizar este contenido en un proyecto.
 
-```powershell
-./update-icons.ps1 -DryRun
-```
-
-Esto muestra el número de archivos SVG detectados por sección y no modifica el repositorio.
-
-## Reglas importantes
-
-- Los SVG se conservan con sus tamaños originales del paquete oficial de AWS.
-- La carpeta `Icon-package-aws-temp` queda fuera del repositorio por `.gitignore`.
-- El contenido de `icons` es la versión pública y estable que se puede subir a Git.
-- El script reemplaza la salida de `icons` solo después de validar la fuente.
-
-## Licencia
-
-Este repositorio se distribuye bajo la licencia de AWS y con fines educativos, conforme a la política de uso del paquete de iconos original.
+Este repositorio se mantiene con fines educativos y de referencia.

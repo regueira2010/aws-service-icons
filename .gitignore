@@ -16,5 +16,8 @@ Desktop.ini
 # Configuración local del editor
 .vscode/
 
+# Script local de mantenimiento
+update-icons.ps1
+
 # Logs locales
 *.log
