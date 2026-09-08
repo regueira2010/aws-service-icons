@@ -1,0 +1,20 @@
+# Paquete fuente temporal de AWS
+/Icon-package-aws-temp/
+
+# Archivos generados por macOS y Windows
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Archivos temporales y copias de respaldo
+*.tmp
+*.temp
+*.bak
+*~
+
+# Configuración local del editor
+.vscode/
+
+# Logs locales
+*.log
